@@ -9,6 +9,8 @@ function performance = Decode_final_temporal_v2(dataset,m,st,session,Trial_Label
 % code is run a 1000 times to generate a distribution of performances. The 
 % mean of this distribution of performance is plotted as a heatmap 
 % in these figures. 
+% Any questions?? Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com
+% 30th August 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inputs-
 
