@@ -7,6 +7,8 @@ function [projected_data,label,projected_data_e,label_e] =  NeuralTraj_v2(datase
 % correct and error trials for Fig 4 of Parthasarathy et al. The principal components are always
 % generated using data from correct trials. However, Fig 2 uses all 7
 % locations while Fig 4 uses only 4 locations.
+% Any questions?? Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com
+% 30th August 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Input -
 % xc1 and xc2 are the time limits that denote the time period of the data
