@@ -3,6 +3,8 @@ function trial_label = AssignTrialLabel(trials,flag)
 % This function identifies the stimulus label
 % (target/distractor/target-distractor location/euclidean distance between
 % target and distractor location in trials) for the trials under trials.
+% Any questions?? Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com
+% 30th August 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inputs
 % trials - array of structs containing timing and stimulus information from correct/
