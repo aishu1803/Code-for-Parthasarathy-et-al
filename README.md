@@ -7,4 +7,6 @@ NeuralTraj_v2.m is the code that generates the projections seen in Fig 3 and Fig
 
 TwoWayANOVA.m identifies the NMS,LMS and CS neurons from a population of neurons (Fig 5). The neurons identified by this code is further used in Fig 6 for cross-temporal decoding and the analysis on PCA space to measure code morphing.
 
+In addition to these .m files, the repository also contains a .m file called AssignTrialLabel that is an auxilliary function necessary for all these main functions. The comments inside the main function describe the need for AssignTrialLabel.m
+
 Please note that these codes serve as guideline if one wants to perform these analyses on their dataset. Please read through the comments in the code to format your dataset to suit the code.  
