@@ -10,3 +10,5 @@ TwoWayANOVA.m identifies the NMS,LMS and CS neurons from a population of neurons
 In addition to these .m files, the repository also contains a .m file called AssignTrialLabel that is an auxilliary function necessary for all these main functions. The comments inside the main function describe the need for AssignTrialLabel.m
 
 Please note that these codes serve as guideline if one wants to perform these analyses on their dataset. Please read through the comments in the code to format your dataset to suit the code.  
+
+Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com if you have any questions.
