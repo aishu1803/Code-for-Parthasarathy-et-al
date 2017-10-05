@@ -16,11 +16,11 @@ function trial_label = AssignTrialLabel(trials,flag)
 % AssignTrialLabel is called in a script/function, trials structure passed
 % to the function contains information about trials recorded in one
 % session.
-% flag -  decribes which stimulus label to identify
+% flag -  describes which stimulus label to identify
 % information about
-% flag ==1 Target
+% flag == 1 Target
 % flag == 2 Distractor
-% flag ==3 Target-Distractor pair
+% flag == 3 Target-Distractor pair
 % flag == 4 Distance between target and distractor.
 %
 % Output
@@ -57,7 +57,7 @@ for t = 1:size(discrete_xy_joint,1)
     y = discrete_xy(discrete_xy_joint(t,2),2:3);
     discrete_xy_joint(t,4) = sqrt((y(2) - x(2))^2 + (y(1) - x(1))^2);
 end
-% Intiliazing the output trial_label.
+% Initializing the output trial_label.
 trial_label = zeros(1,length(trials));
 % The loop runs through every trial in the struct trials to parse the
 % stimulus identity.
@@ -68,7 +68,7 @@ for i = 1:length(trials)
         row = trials(i).target.row;
         % Identifying the column
         col = trials(i).target.column;
-        % Find the dicrete target label from discrete_xy for the particular
+        % Find the discrete target label from discrete_xy for the particular
         % row and column of the target.
         ind = discrete_xy(:,3)==row & discrete_xy(:,2)==col;
         % Assigning the discrete target label for trial i in trial_label
@@ -80,7 +80,7 @@ for i = 1:length(trials)
         ind = discrete_xy(:,3)==row & discrete_xy(:,2)==col;
         trial_label(1,i) = discrete_xy(ind,1);
         % If target - distractor paired labels are parsed
-    elseif flag ==3
+    elseif flag==3
         % Identifying discrete target label
         row_t = trials(i).target.row;
         col_t = trials(i).target.column;

@@ -5,10 +5,10 @@ function performance = Decode_final_temporal_v2(dataset,m,st,session,Trial_Label
 % the decoder when you dissociate the  time windows from which you pick the
 % training and testing data. This dataset may be built from a pseudo-population or
 % from simultaneously recorded ensemble of neurons. This code generates
-% results for Fig 2a, 2e, 4a, 4f, 6a, 6b, 6c, 6e, 6f and 6g. This 
-% code is run a 1000 times to generate a distribution of performances. The 
-% mean of this distribution of performance is plotted as a heatmap 
-% in these figures. 
+% results for Fig 2a, 2e, 4a, 4f, 6a, 6b, 6c, 6e, 6f and 6g. This
+% code is run 1000 times to generate a distribution of performances. The
+% mean of this distribution of performances is plotted as a heatmap
+% in these figures.
 % Any questions?? Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com
 % 30th August 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +53,7 @@ function performance = Decode_final_temporal_v2(dataset,m,st,session,Trial_Label
 % we are decoding correct or error trials. This string is useful in
 % differentiating the decoding in Fig 2 and Fig 4 of Parthasarathy et al
 % Note while decoding the target from data recorded during error trials,
-% the decoder is trained using data fromcorrect trials and tested using data
+% the decoder is trained using data from correct trials and tested using data
 % from error trials.
 %
 % Output -
