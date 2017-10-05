@@ -1,10 +1,10 @@
 function [nms,lms,f_nms,d1_sel,d2_sel,f_del1,f_del2,size_RF_d2,size_RF_d1,cs] = TwoWayAnova(dataset,trials,session,bins)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This function performs ANOVA on neural data in spike counts defined by the
-% input variable bins to identify NMS, LMS and CS neurons as defind in the
+% input variable bins to identify NMS, LMS and CS neurons as defined in the
 % paper. Further, you can also compute the receptive field size for the
 % neuron's responsiveness during the trial, f-stats for NMS and delay 1 and
-% delay 2 selecctivity. The neurons identified by this code and the
+% delay 2 selectivity. The neurons identified by this code and the
 % F-stats computed here are used in Fig 5 and Fig 6 in Parthasarathy et al.
 % Any questions?? Please contact Aishwarya Parthasarathy at aishu.parth@gmail.com
 % 30th August 2017
@@ -59,7 +59,7 @@ function [nms,lms,f_nms,d1_sel,d2_sel,f_del1,f_del2,size_RF_d2,size_RF_d1,cs] = 
 %
 % f_del2 - f_stats from ANOVA for those neurons identified in d2_sel.
 %
-% size_RF_d2 - no of respensive locations for each neuron during Delay 2
+% size_RF_d2 - no of responsive locations for each neuron during Delay 2
 % (2050 - 2550ms)
 %
 % size_RF_d1 - no of responsive locations for each neuron during Delay 1
