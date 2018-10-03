@@ -1,5 +1,6 @@
 # Code-for-Parthasarathy-et-al
-This repository contains the code that generates the results for cross-temporal decoding, the projections on the PCA space and the identification of mixed selective neurons. All the codes are written in MATLAB.
+This repository contains the code that generates the results for Parthasarathy, A., Herikstad, R., Bong, J. H., Medina, F. S., Libedinsky, C., & Yen, S.-C. (2017). Mixed selectivity morphs population codes in prefrontal cortex. Nature Publishing Group, 20(12), 1770–1779. http://doi.org/10.1038/s41593-017-0003-2.
+All the codes are written in MATLAB.
 
 Decode_final_temporal_v2.m is the code that performs the cross-temporal decoding on a neural population data stored as spike counts. The results from Fig 2a, 2e, 4a, 4f, 6a, 6b, 6c, 6e, 6f, 6g can be generated using this code.
 

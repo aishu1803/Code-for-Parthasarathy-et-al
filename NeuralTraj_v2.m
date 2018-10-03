@@ -12,12 +12,12 @@ function [projected_data,label,projected_data_e,label_e] =  NeuralTraj_v2(datase
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Input -
 % xc1 and xc2 are the time limits that denote the time period of the data
-% that is used to build the prinicipal components  For ex: if
-% the prinicipal components need to be defined by the Delay 1 space:
+% that is used to build the principal components  For ex: if
+% the principal components need to be defined by the Delay 1 space:
 % xc1 = 800ms (300ms of target period +  first 500ms of Delay 1. 0
 % always denotes target onset) and xc2 = 1300ms.
 
-% dataset represents the activity of all the neurons in spike counts used to build this prinicipal component space
+% dataset represents the activity of all the neurons in spike counts used to build this principal component space
 % (and hence the data projected onto this space) in xms bins across the
 % length of the trial for all the recorded correct trials. This is a 3d matrix.Size of 1st dimension represents
 % the number of neurons used to build this space. Size of the 2nd dimension represents
@@ -27,7 +27,7 @@ function [projected_data,label,projected_data_e,label_e] =  NeuralTraj_v2(datase
 % session refers to a matrix that specifies the session during which the
 % neuron in the dataset was recorded. For ex: If dataset contained activity
 % from 256 neurons. size of session is 256 x 2, where the first column
-% specifies the indentity of the neuron within each session and the second
+% specifies the identity of the neuron within each session and the second
 % column specifies the session during which the neuron was recorded.
 
 % trials - size of this structure equals the number of sessions from which
@@ -62,7 +62,7 @@ function [projected_data,label,projected_data_e,label_e] =  NeuralTraj_v2(datase
 % projected onto the principal components. Size - Ntrials x 1
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Calling the function to build a set of pesudotrials for all training and
+% Calling the function to build a set of pseudotrials for all training and
 % testing sets. 
 [training_label,train_trials,testing_label,test_trials,testing_label2,test_trials2] = MakeTrialSet('target',trials,etrials,session,count,Test);
 % Initializing a variable (pr_data) to store the data used to build the PCA
@@ -210,7 +210,7 @@ if strcmp(Trial_Label,'Target') || strcmp(Trial_Label,'target')
 elseif strcmp(Trial_Label,'Distractor') || strcmp(Trial_Label,'distractor')
     label=2;
 else
-    label = 3;
+    label=3;
 end
 % Dividing all the trials into training and testing pile. Also created a
 % testing pile for error trials. The training pile is from which the PCA
