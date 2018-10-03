@@ -133,7 +133,7 @@ for q = 1:length(loc)
         % Subsample from this list to get 25 trials.
         ind_tr_subsample = ind_tr(randsample(length(ind_tr),25,true));
         % Looping over all the time bins
-        for i_bins = 1:58
+        for i_bins = 1:size(dataset,3)
             % Looping over the subsampled 25 trials
             for i_len = 1:length(ind_tr_subsample)
                 % Looping over each neuron
@@ -160,7 +160,7 @@ for q = 1:length(loc)
     for w = 1:50
         ind_tr = find(testing_label2==loc(q));
         ind_tr_subsample = ind_tr(randsample(length(ind_tr),25,true));
-        for i_bins = 1:58
+        for i_bins = 1:size(dataset,3)
             for i_len = 1:25
                 for i_co = 1: size(dataset,1)
                     test_data(i_co,i_len) = ((dataset(i_co,test_trials2(i_co,ind_tr_subsample(i_len)),i_bins))-m(i_co))./st(i_co);
